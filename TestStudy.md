@@ -22,7 +22,7 @@
 <blockquote>
 <p>Anotação inserida acima de uma classe de teste que indica ao spring que os testes de repository devem ser realizados em outro banco de dados (um específico para testes), que não seja o principal de aplicação.</p>
 </blockquote>
-<p><code>@ActiveProfiles(“test”)</code></p>
+<p><code>@ActiveProfiles</code>(“test”)</p>
 <blockquote>
 <p>Anotação inserida acima de uma classe de testes que obriga o SpringBoot a utilizar um application-test.properties, carregando as configurações de um profile específico para testes.</p>
 </blockquote>
@@ -32,19 +32,19 @@
 </blockquote>
 <p><code>@BeforeEach</code></p>
 <blockquote>
-<p>Anotação inserida acima de um método para sinalizar que antes de cada <code>@Test</code> este método deve ser executado.</p>
+<p>Anotação inserida acima de um método para sinalizar que <strong>antes de cada</strong> <code>@Test</code> este método deve ser executado.</p>
 </blockquote>
 <p><code>@AfterEach</code></p>
 <blockquote>
-<p>Anotação inserida acima de um método para sinalizar que depois de cada <code>@Test</code> este método deve ser executado.</p>
+<p>Anotação inserida acima de um método para sinalizar que <strong>depois de cada</strong> <code>@Test</code> este método deve ser executado.</p>
 </blockquote>
 <p><code>@BeforeAll</code></p>
 <blockquote>
-<p>Anotação inserida acima de um método para sinalizar que antes de todos os <code>@Test</code> este método deve ser executado.</p>
+<p>Anotação inserida acima de um método para sinalizar que <strong>antes de todos</strong> os <code>@Test</code> este método deve ser executado.</p>
 </blockquote>
 <p><code>@AfterAll</code></p>
 <blockquote>
-<p>Anotação inserida acima de um método para sinalizar que depois de todos os <code>@Test</code> este método deve ser executado.</p>
+<p>Anotação inserida acima de um método para sinalizar que <strong>depois de todos</strong> os <code>@Test</code> este método deve ser executado.</p>
 </blockquote>
 <h2 id="dicas-para-implementação-de-testes.">Dicas para implementação de testes.</h2>
 <ul>
