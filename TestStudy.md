@@ -4,7 +4,7 @@
 ---
 
 <h1 id="estudos-sobre-testes-java--springboot">Estudos sobre testes Java &amp; SpringBoot</h1>
-<h3 id="felipe-c-b-santos">Felipe C B Santos</h3>
+<h4 id="felipe-c-b-santos">Felipe C B Santos</h4>
 <p>Arquivo criado para facilitar os estudos relativos a testes.</p>
 <p><a href="https://stackoverflow.com/questions/55276555/when-to-use-runwith-and-when-extendwith">When to use @RunWith and when @ExtendWith</a></p>
 <p>Se você estiver usando uma versão mais antiga que a 5 do Junit, então você deve utilizar:<br>
@@ -46,19 +46,28 @@
 <blockquote>
 <p>Anotação inserida acima de um método para sinalizar que <strong>depois de todos</strong> os <code>@Test</code> este método deve ser executado.</p>
 </blockquote>
-<h2 id="dicas-para-implementação-de-testes.">Dicas para implementação de testes.</h2>
+<h2 id="dicas">Dicas</h2>
 <ul>
 <li>
-<p>É importante que o nome do teste seja claramente descritivo independente do tamanho, de forma que o teste tenha o resultado que seu nome espera.</p>
+<p>O nome do método deve ser nos modelos: <a href="https://martinfowler.com/bliki/GivenWhenThen.html">GivenWhenThen</a> ou nomeDoMetodoQueEstaSendoTestado.</p>
 </li>
 <li>
-<p>Não é mandatório, contudo, para ter uma estrutura sequencial de um teste, é recomendado que se utilize três etapas. Captura/processamento de informações necessárias para realizar o teste, execução do teste e afirmação do teste. Podendo seguir o seguinte modelo:</p>
-<p><code>// arrange</code><br>
+<p>Não é mandatório (mas na HST é), contudo, para ter uma estrutura sequencial de um teste, é recomendado que se utilize três etapas. Captura/processamento de informações necessárias para realizar o teste, execução do teste e afirmação do teste. Podendo seguir o seguinte modelo:</p>
+<p><code>// arrange - organizar o que será testado - given</code><br>
 <code>[code...]</code></p>
-<p><code>// act</code><br>
+<p><code>// act - execução - when</code><br>
 <code>[code...]</code></p>
-<p><code>// assert</code><br>
+<p><code>// assert - validação - then</code><br>
 <code>[code...]</code></p>
+</li>
+<li>
+<p>Um teste unitário é um Box Test. O teste deve ser executado no seu computador e ter capacidade para ser executado em qualquer local (Sandbox, Homolog ou Prod).</p>
+</li>
+<li>
+<p>Stubs: o seu computador deve prover uma base/webservice. Um mock do serviço.</p>
+</li>
+<li>
+<p><a href="https://stackoverflow.com/questions/16467685/difference-between-mock-and-injectmocks">Diferença entre @InjectMocks e @Mock</a> - Basicamente, é como se @InjectMocks = um manager com diversos objetos e @Mock = um objeto.</p>
 </li>
 </ul>
 
