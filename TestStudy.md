@@ -22,7 +22,7 @@
 <blockquote>
 <p>Anotação inserida acima de uma classe de teste que indica ao spring que os testes de repository devem ser realizados em outro banco de dados (um específico para testes), que não seja o principal de aplicação.</p>
 </blockquote>
-<p><code>@ActiveProfiles</code>(“test”)</p>
+<p><code>@ActiveProfiles(“test”)</code></p>
 <blockquote>
 <p>Anotação inserida acima de uma classe de testes que obriga o SpringBoot a utilizar um application-test.properties, carregando as configurações de um profile específico para testes.</p>
 </blockquote>
