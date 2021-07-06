@@ -61,7 +61,7 @@
 <code>[code...]</code></p>
 </li>
 <li>
-<p>Um teste unitário é um Box Test. O teste deve ser executado no seu computador e ter capacidade para ser executado em qualquer local (Sandbox, Homolog ou Prod).</p>
+<p>Um teste unitário é um Box Test. O teste deve ser executado no seu computador e ter capacidade para ser executado em qualquer local.</p>
 </li>
 <li>
 <p>Stubs: o seu computador deve prover uma base/webservice. Um mock do serviço.</p>
