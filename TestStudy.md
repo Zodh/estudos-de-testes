@@ -24,7 +24,7 @@
 </blockquote>
 <p><code>@AutoConfigureMockMvc</code></p>
 <blockquote>
-<p>Anotação acima da classe que configura o mockMvc, que possibilita disparar requests nos testes de controllers. É carregado com todas as camadas. Caso a anotação <code>@WebMvcTest</code> esteja assinada, esta se torna obsoleta.</p>
+<p>Anotação acima da classe que configura o mockMvc, que possibilita disparar requests nos testes de controllers. É carregado com todas as camadas). Caso a anotação <code>@WebMvcTest</code> esteja assinada, esta se torna obsoleta.</p>
 </blockquote>
 <p><code>@AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)</code></p>
 <blockquote>
@@ -56,10 +56,10 @@
 </blockquote>
 <p><code>MockMvc</code></p>
 <blockquote>
-<p>Classe capaz de disparar requisições http: <em><code>mockMvc.perform(MockMvcRequestBuilders* *.[protocoloHttp](uri)* *.content(conteudoParametroDaRequisicao)* *.contentType(MediaType.APPLICATION_JSON)</code></em><br>
-<em><strong>.andExpect(MockMvcResultMatchers</strong></em><br>
-<em><strong>.status()</strong></em><br>
-<em><strong>.is(400))</strong></em><br>
+<p>Classe capaz de disparar requisições http: <code>mockMvc.perform(MockMvcRequestBuilders .[protocoloHttp](uri) .content(conteudoParametroDaRequisicao) .contentType(MediaType.APPLICATION_JSON)</code><br>
+<strong>.andExpect(MockMvcResultMatchers</strong><br>
+<strong>.status()</strong><br>
+<strong>.is(400))</strong><br>
 (estas linhas em negrito se assemelham a um assert)</p>
 </blockquote>
 <h2 id="dicas">Dicas</h2>
