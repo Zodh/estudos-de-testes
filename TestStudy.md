@@ -94,7 +94,10 @@
 </ul>
 <h3 id="jacoco">JaCoCo</h3>
 <blockquote>
-<p>O <strong>JaCoCo</strong> se trata de um plugin maven que funciona como um “gerador de relatórios de cobertura de testes em relação ao código para projetos java”.<br>
-<a href="https://www.baeldung.com/jacoco">Estudo completo - Baeldung</a></p>
+<p>O <strong>JaCoCo</strong> se trata de um plugin maven que funciona como um “gerador de relatórios de cobertura de testes em relação ao código para projetos java”.</p>
 </blockquote>
+<pre><code>Como abrir o relatório do JaCoCo? 
+target --&gt; site --&gt; jacoco --&gt; index --&gt; open in default
+</code></pre>
+<p><a href="https://www.baeldung.com/jacoco">Estudo completo - Baeldung</a></p>
 
