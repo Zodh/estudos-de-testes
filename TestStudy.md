@@ -82,14 +82,19 @@
 <li>
 <p>Stubs: o seu computador deve prover uma base/webservice. Um mock do serviço.</p>
 </li>
-<li>
-<p><a href="https://stackoverflow.com/questions/16467685/difference-between-mock-and-injectmocks">Diferença entre @InjectMocks e @Mock</a></p>
-</li>
-<li>
-<p><code>@InjectMocks</code>: um manager com diversos objetos</p>
-</li>
-<li>
-<p><code>@Mock</code>: um objeto.</p>
-</li>
 </ul>
+<h3 id="mock">Mock</h3>
+<blockquote>
+<p>Mock se trata de uma simulação de comportamento de determinada classe.</p>
+</blockquote>
+<ul>
+<li><a href="https://stackoverflow.com/questions/16467685/difference-between-mock-and-injectmocks">Diferença entre @InjectMocks e @Mock</a></li>
+<li><code>@InjectMocks</code>: um manager com diversos objetos</li>
+<li><code>@Mock</code>: um objeto.</li>
+</ul>
+<h3 id="jacoco">JaCoCo</h3>
+<blockquote>
+<p>O <strong>JaCoCo</strong> se trata de um plugin maven que funciona como um “gerador de relatórios de cobertura de testes em relação ao código para projetos java”.<br>
+<a href="https://www.baeldung.com/jacoco">Estudo completo - Baeldung</a></p>
+</blockquote>
 
