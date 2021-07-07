@@ -67,7 +67,13 @@
 <p>Stubs: o seu computador deve prover uma base/webservice. Um mock do serviço.</p>
 </li>
 <li>
-<p><a href="https://stackoverflow.com/questions/16467685/difference-between-mock-and-injectmocks">Diferença entre @InjectMocks e @Mock</a> - Basicamente, é como se @InjectMocks = um manager com diversos objetos e @Mock = um objeto.</p>
+<p><a href="https://stackoverflow.com/questions/16467685/difference-between-mock-and-injectmocks">Diferença entre @InjectMocks e @Mock</a></p>
+</li>
+<li>
+<p><code>@InjectMocks</code>: um manager com diversos objetos</p>
+</li>
+<li>
+<p><code>@Mock</code>: um objeto.</p>
 </li>
 </ul>
 
