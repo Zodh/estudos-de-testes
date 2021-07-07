@@ -18,6 +18,14 @@
 <blockquote>
 <p>Funciona de forma semelhante ao <code>@SpringBootTest</code>, contudo, é específico para teste de interfaces Repository. A diferença, é que já provê algumas coisas pro caso de repository, como: todos os métodos de teste já terão um controle de transação, injeção de EntityManagers específicos para testes e tratamentos específicos para teste de repository.</p>
 </blockquote>
+<p><code>@WebMvcTest</code></p>
+<blockquote>
+<p>Funciona de forma semelhante ao <code>@SpringBootTest</code>, contudo, é específico para teste da camada de Controller. A diferença, é que já provê algumas coisas pro caso de controllers, como: controllers, rest controllers, controller advice e tudo relacionada à camada MVC do projeto. Mas é importante sinalizar que esta anotação não inicializa as camadas de service/processamento da aplicação.</p>
+</blockquote>
+<p><code>@AutoConfigureMockMvc</code></p>
+<blockquote>
+<p>Anotação acima da classe que configura o mockMvc, que possibilita disparar requests nos testes de controllers. É carregado com todas as camadas. Caso a anotação <code>@WebMvcTest</code> esteja assinada, esta se torna obsoleta.</p>
+</blockquote>
 <p><code>@AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)</code></p>
 <blockquote>
 <p>Anotação inserida acima de uma classe de teste que indica ao spring que os testes de repository devem ser realizados em outro banco de dados (um específico para testes), que não seja o principal de aplicação.</p>
@@ -45,6 +53,14 @@
 <p><code>@AfterAll</code></p>
 <blockquote>
 <p>Anotação inserida acima de um método para sinalizar que <strong>depois de todos</strong> os <code>@Test</code> este método deve ser executado.</p>
+</blockquote>
+<p><code>MockMvc</code></p>
+<blockquote>
+<p>Classe capaz de disparar requisições http: <code>mockMvc.perform(MockMvcRequestBuilders .[protocoloHttp](uri) .content(conteudoParametroDaRequisicao) .contentType(MediaType.APPLICATION_JSON)</code><br>
+<strong>.andExpect(MockMvcResultMatchers</strong><br>
+<strong>.status()</strong><br>
+<strong>.is(400))</strong><br>
+(estas linhas em negrito se assemelham a um assert)</p>
 </blockquote>
 <h2 id="dicas">Dicas</h2>
 <ul>
